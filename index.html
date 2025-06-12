@@ -1,25 +1,175 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JustMath</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        header { margin-bottom: 20px; }
-        footer { margin-top: 40px; font-size: 0.9em; color: #666; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JustMath • Train & Improve</title>
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- KaTeX CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body, {delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ]});"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Inter',sans-serif; background:#f0f4f8; }
+    a { text-decoration:none; color:inherit; }
+    header { background:rgba(255,255,255,0.85); backdrop-filter:blur(10px); position:fixed; width:100%; top:0; z-index:100; }
+    .nav { max-width:960px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:1rem; }
+    .logo { font-size:1.5rem; font-weight:800; color:#fff; }
+    .nav a { margin-left:1rem; font-weight:600; color:#fff; }
+    #hero { height:100vh; background:linear-gradient(135deg,#4e7cff 0%,#88c6ff 100%); display:flex; align-items:center; justify-content:center; text-align:center; padding:1rem; }
+    #hero h1 { font-size:3rem; color:#fff; margin-bottom:0.5rem; }
+    #hero p { font-size:1.25rem; color:#eef; margin-bottom:1rem; }
+    .btn { display:inline-block; background:#fff; color:#4e7cff; padding:0.75rem 1.5rem; border-radius:0.5rem; font-weight:600; transition:transform .2s; }
+    .btn:hover { transform:translateY(-3px); }
+    section { max-width:800px; margin:4rem auto; padding:0 1rem; }
+    .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:2rem; }
+    .card { background:#fff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:transform .2s; }
+    .card:hover { transform:translateY(-5px); }
+    .card h3 { margin-bottom:0.75rem; color:#4e7cff; }
+    .card p { color:#555; }
+    footer { text-align:center; padding:2rem 1rem; color:#666; font-size:0.9rem; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to JustMath</h1>
-    </header>
-    <main>
-        <p>This is a simple GitHub Pages site.</p>
-        <p>You can edit <code>index.html</code> to customize your website and upload your own code snippets or documentation.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 JustMath</p>
-    </footer>
+  <header>
+    <div class="nav">
+      <div class="logo">JustMath</div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="jtrainer.html">JTrainer</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div>
+      <h1>JustMath</h1>
+      <p>Train your problem-solving skills. Track progress. Grow.</p>
+      <a class="btn" href="#features">Learn More</a>
+    </div>
+  </section>
+
+    <!-- Features removed to prevent scrolling; first page is hero-only -->
+  <footer>
+    &copy; 2025 JustMath • Elevate your math journey
+  </footer>
+    &copy; 2025 JustMath • Elevate your math journey
+  </footer>
+</body>
+</html>
+
+<!-- jtrainer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JTrainer • JustMath Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- KaTeX CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body, {delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ]});"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Inter',sans-serif; background:#f7faff; color:#333; }
+    header { background:#fff; border-bottom:1px solid #ddd; padding:1rem; position:sticky; top:0; }
+    .nav { max-width:960px; margin:auto; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-size:1.5rem; font-weight:800; color:#4e7cff; }
+    .nav a { margin-left:1rem; font-weight:600; color:#4e7cff; }
+    main { max-width:800px; margin:2rem auto; background:#fff; padding:2rem; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+    h1,h2 { margin-bottom:1rem; color:#4e7cff; }
+    .tabs { display:flex; border-bottom:2px solid #ddd; margin-bottom:1rem; }
+    .tab { padding:0.5rem 1rem; cursor:pointer; font-weight:600; }
+    .tab.active { border-bottom:3px solid #4e7cff; color:#4e7cff; }
+    .tab-content { display:none; }
+    .tab-content.active { display:block; }
+    label { display:block; margin-top:1rem; font-weight:600; }
+    textarea { width:100%; margin-top:0.5rem; padding:0.75rem; border:1px solid #ccc; border-radius:4px; font-family:'Inter',sans-serif; }
+    .btn { margin-top:1rem; padding:0.75rem; background:#4e7cff; color:#fff; border:none; width:100%; border-radius:4px; font-weight:600; cursor:pointer; }
+    .output { margin-top:1rem; padding:1rem; background:#eef4ff; border-left:4px solid #4e7cff; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">JTrainer</div>
+      <nav><a href="index.html">Home</a><a href="jtrainer.html">Practice</a></nav>
+    </div>
+  </header>
+  <main>
+    <h1>JTrainer</h1>
+    <p>Practice problems to sharpen your skills—submit solutions in text or LaTeX.</p>
+    <!-- Problem Statement -->
+    <section id="problem-statement">
+      <h2>Problem</h2>
+      <p>Solve and prove: $$\sum_{k=1}^{n}k=\frac{n(n+1)}{2},\quad n\in\mathbb{N}.$$</p>
+    </section>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="text">Text Solution</div>
+      <div class="tab" data-tab="latex">LaTeX Solution</div>
+    </div>
+
+    <section class="tab-content active" id="text">
+      <label for="textInput">Your Solution</label>
+      <textarea id="textInput" rows="6" placeholder="Explain your proof in plain text..."></textarea>
+      <button class="btn" onclick="submitText()">Submit Text Solution</button>
+      <div class="output" id="textFeedback"></div>
+    </section>
+
+    <section class="tab-content" id="latex">
+      <label for="latexInput">Your LaTeX Solution</label>
+      <textarea id="latexInput" rows="6" placeholder="Enter your proof in LaTeX..."></textarea>
+      <button class="btn" onclick="submitLaTeX()">Submit LaTeX Solution</button>
+      <div class="output" id="latexFeedback"></div>
+    </section>
+  </main>
+  <footer style="text-align:center;padding:1rem;color:#666;font-size:0.9rem;">&copy; 2025 JustMath</footer>
+
+  <script>
+    // Tab navigation
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    function submitText() {
+      const input = document.getElementById('textInput').value;
+      const fb = document.getElementById('textFeedback');
+      fb.textContent = input ? 'Text solution submitted. Great work!' : 'Please enter your solution.';
+    }
+
+    function submitLaTeX() {
+      const input = document.getElementById('latexInput').value;
+      const fb = document.getElementById('latexFeedback');
+      if (!input.trim()) { fb.textContent = 'Please enter your LaTeX proof.'; return; }
+      fb.innerHTML = '<strong>Rendered Proof:</strong><div>$$' + input + '$$</div>';
+      renderMathInElement(fb);
+    }
+  </script>
 </body>
 </html>
